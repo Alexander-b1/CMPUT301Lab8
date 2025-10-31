@@ -17,5 +17,14 @@ public class CustomList {
     
 
     // Will be implemented later using TDD (leave blank for now)
-     public boolean hasCity(City city) { return cities.contains(city);}
+
+    /**
+     * Checks if a CustomList has a city
+     * @param city The city being searched for
+     * @return A boolean of whether the city list contains the city.
+     */
+    public boolean hasCity(City city) { return cities.contains(city);}
+    public void delete (City city) {
+        cities.remove(city);
+    }
 }
