@@ -26,6 +26,18 @@ public class CustomListTest {
         // Removes city from the list, and ensures it has been deleted
         list.delete(calgary);
         assertFalse(list.hasCity(calgary));
+    }
 
+    @Test
+    public void testCountCitys(){
+        CustomList list = new CustomList();
+
+        // Ensures list starts empty
+        assertEquals(0,list.countCities());
+
+        // Ensures a city is counted once added to the list.
+        City calgary = new City("Calgary","AB");
+        list.addCity(calgary);
+        assertEquals(1, list.countCities());
     }
 }

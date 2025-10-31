@@ -24,6 +24,11 @@ public class CustomList {
      * @return A boolean of whether the city list contains the city.
      */
     public boolean hasCity(City city) { return cities.contains(city);}
+
+    /**
+     * Deletes a city from the list
+     * @param city the city being removed from the list
+     */
     public void delete (City city) {
         cities.remove(city);
     }
