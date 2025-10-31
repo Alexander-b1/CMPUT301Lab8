@@ -29,7 +29,11 @@ public class CustomList {
      * Deletes a city from the list
      * @param city the city being removed from the list
      */
-    public void delete (City city) {
-        cities.remove(city);
-    }
+    public void delete (City city) { cities.remove(city);}
+
+    /**
+     * Returns a count of cities in the list
+     * @return the number of cities in the list.
+     */
+    public int countCities(){ return cities.size();}
 }
